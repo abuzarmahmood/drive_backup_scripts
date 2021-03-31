@@ -5,7 +5,7 @@ fi
 DIR=$1
 EMAIL=$2
 
-rclone sync $DIR katz-lab-archive:/$DIR
+rclone sync -P $DIR katz-lab-archive:/$DIR
 
 echo "$(basename $DIR) archiving complete" \
     | mail -s "Archiving folder complete" $EMAIL 
