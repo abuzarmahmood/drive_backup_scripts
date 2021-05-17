@@ -1,3 +1,5 @@
 DIR=$1
-tree $DIR > $DIR/$(basename $DIR).tree
-find $DIR > $DIR/$(basename $DIR).list
+EMAIL=$2
+ARC_DIR="${DIR}_archive"
+tree $DIR > $ARC_DIR/$(basename $DIR).tree
+find $DIR > $ARC_DIR/$(basename $DIR).list
