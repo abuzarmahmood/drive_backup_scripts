@@ -16,5 +16,10 @@
             run : bash gen_file_lists.sh [directory] 
 5 - Archive all subdirectories (pigz -0)
     a - Compiled into "create_archives.sh",
-            run : bash create_archives.sh [directory] 
+            run : bash create_archives.sh [directory][email_address] 
+                    - Script will send email when complete
 6 - Upload to google filestream, and google cloud storage
+
+================================
+- "create_archives_pipeline.sh" file compiles steps 1-5 for convenience
+            run : bash create_archives_pipeline.sh [directory][email_address] 
