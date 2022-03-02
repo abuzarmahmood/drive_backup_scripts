@@ -6,7 +6,7 @@ SOURCE=$1
 DEST=$2
 EMAIL=$3
 
-gstuil -m cp $SOURCE gs://$DEST
+gsutil -m rsync -r $SOURCE gs://$DEST
 
-echo "$(basename $DIR) archiving complete" \
+echo "$(basename $SOURCE) archiving complete" \
     | mail -s "Archiving folder complete" $EMAIL 
