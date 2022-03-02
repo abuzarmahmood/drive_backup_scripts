@@ -17,4 +17,4 @@ do
     zip -r -s 100g -0 $ARC_DIR/$(basename $SUBDIR).zip $(basename $SUBDIR);
 done
 echo "$(basename $DIR) archiving complete" \
-    | mail -s "Archiving folder complete" $EMAIL 
+    | mail -s "$(basename $DIR) archiving complete" $EMAIL 
