@@ -1,3 +1,8 @@
+Requirements:
+- Install gsutil : https://cloud.google.com/sdk/docs/install#deb
+- Install rclone: https://rclone.org/
+- Install par2: sudo apt install par2
+
 1 - Copy folder from katz file-share
 2 - Rename any subdirectories/files with spaces and parenthesis to 
     have underscores only
